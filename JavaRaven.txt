@@ -55,34 +55,34 @@ public class Raven {
     }
     
     public static String place() {
-        String name = "";
+        String place = "";
         System.out.println("Please enter a place.");
         Scanner sc = new Scanner(System.in);
-        name = sc.nextLine();
-        return name;
+        place = sc.nextLine();
+        return place;
     }
     
     public static String pluralNoun() {
-        String name = "";
+        String pluralNoun = "";
         System.out.println("Please enter a plural noun.");
         Scanner sc = new Scanner(System.in);
-        name = sc.nextLine();
-        return name;
+        pluralNoun = sc.nextLine();
+        return pluralNoun;
     }
     
     public static String edVerb() {
-        String name = "";
+        String edVerb = "";
         System.out.println("Please enter a verb ending in 'ed'.");
         Scanner sc = new Scanner(System.in);
-        name = sc.nextLine();
-        return name;
+        edVerb = sc.nextLine();
+        return edVerb;
     }
     
     public static String ingVerb() {
-       String name = "";
+       String ingVerb = "";
         System.out.println("Please enter a verb ending in 'ing'.");
         Scanner sc = new Scanner(System.in);
-        name = sc.nextLine();
-        return name;
+        ingVerb = sc.nextLine();
+        return ingVerb;
     }
 }
