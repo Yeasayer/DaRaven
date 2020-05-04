@@ -37,4 +37,8 @@ public class AdverbsNVerbs {
         this.adverbs = averb_arr;
     }
     
+    //Just get an adverb based on random selection.
+    getAdverb(){
+        
+    }
 }
