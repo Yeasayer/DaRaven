@@ -25,13 +25,13 @@ public class AdverbsNVerbs implements FileLoad{
     private String advfile;
     
     //Standard Constructor
-    AdverbsNVerbs() throws FileNotFoundException, IOException{
+    AdverbsNVerbs() /*throws FileNotFoundException, IOException*/{
         this.vfile = "Words/verbs.txt";
         this.advfile = "Words/adverbs.txt";
         
         ClassLoader cl = ClassLoader.getSystemClassLoader();
         
-        //try{
+        try{
         String v2 = cl.getResource(vfile).getFile();
         String a2 = cl.getResource(advfile).getFile();
         //Comment out for later.
@@ -39,6 +39,9 @@ public class AdverbsNVerbs implements FileLoad{
         this.adverbs = this.getWords(a2);
         this.verbs = this.getWords(v2);
         System.out.println(Arrays.toString(verbs.toArray()));
+        } catch (Exception e){
+            System.out.println(e);
+        }
     }
     
     //Use if you want alternative words from a different file.
@@ -53,7 +56,18 @@ public class AdverbsNVerbs implements FileLoad{
     }
     
     //Just get an adverb based on random selection.
-    getAdverb(){
-        
+    public String getAdverb(){
+        return adverbs.get((int)(Math.random() * adverbs.size()));
+    }
+    public String getAdverb(int i){
+        i = (i>adverbs.size()||i<0?0:i);
+        return adverbs.get(i);
+    }
+    public String getVerb(){
+        return adverbs.get((int)(Math.random() * adverbs.size()));
+    }
+    public String getVerb(int i){
+        i = (i>adverbs.size()||i<0?0:i);
+        return verbs.get(i);
     }
 }

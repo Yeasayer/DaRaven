@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package daraven;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,18 +13,22 @@ import java.util.Scanner;
  *
  * @author Nik
  */
-public class Raven {
+public class Raven implements FileLoad{
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // TODO code application logic here
         
-        //LazyTest Right here.
+        NounsNAdjectives na;
+        AdverbsNVerbs av;
+        na = new NounsNAdjectives();
+        av = new AdverbsNVerbs();
+        System.out.println(na.getNoun());
         
-        NounsNAdjectives na = new NounsNAdjectives();
-        AdverbsNVerbs av = new AdverbsNVerbs();
+        
+        
         /*
         System.out.println("This is a madlib for Edgar Allen Poe's Poem 'The Raven'.");
         String place, fName, edVerb, edVerb2, ingVerb, pNoun;
