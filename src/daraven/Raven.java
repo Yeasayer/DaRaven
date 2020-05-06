@@ -96,5 +96,5 @@ public class Raven implements FileLoad{
         Scanner sc = new Scanner(System.in);
         ingVerb = sc.nextLine();
         return ingVerb;
-    }*/
+    }
 }

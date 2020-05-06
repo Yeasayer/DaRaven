@@ -32,20 +32,20 @@ public class AdverbsNVerbs implements FileLoad{
         ClassLoader cl = ClassLoader.getSystemClassLoader();
         
         try{
-        String v2 = cl.getResource(vfile).getFile();
-        String a2 = cl.getResource(advfile).getFile();
-        //Comment out for later.
-        System.out.println(a2+" "+v2);
-        this.adverbs = this.getWords(a2);
-        this.verbs = this.getWords(v2);
-        System.out.println(Arrays.toString(verbs.toArray()));
+            String v2 = cl.getResource(vfile).getFile();
+            String a2 = cl.getResource(advfile).getFile();
+            //Comment out for later.
+            System.out.println(a2+" "+v2);
+            this.adverbs = this.getWords(a2);
+            this.verbs = this.getWords(v2);
+            System.out.println(Arrays.toString(verbs.toArray()));
         } catch (Exception e){
             System.out.println(e);
         }
     }
     
     //Use if you want alternative words from a different file.
-    AdverbsNVerbs(String fs) throws FileNotFoundException, IOException{
+    AdverbsNVerbs(String fs){
         
     }
     
