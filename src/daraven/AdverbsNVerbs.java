@@ -11,23 +11,38 @@ package daraven;
  */
 
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
-//Need for file IO. May revise later.
-import java.io.*;
-
-public class AdverbsNVerbs {
+public class AdverbsNVerbs implements FileLoad{
     
     private ArrayList<String> verbs;
     private ArrayList<String> adverbs;
     
+    private String vfile;
+    private String advfile;
+    
     //Standard Constructor
-    AdverbsNVerbs(){
+    AdverbsNVerbs() throws FileNotFoundException, IOException{
+        this.vfile = "Words/verbs.txt";
+        this.advfile = "Words/adverbs.txt";
         
+        ClassLoader cl = ClassLoader.getSystemClassLoader();
+        
+        //try{
+        String v2 = cl.getResource(vfile).getFile();
+        String a2 = cl.getResource(advfile).getFile();
+        //Comment out for later.
+        System.out.println(a2+" "+v2);
+        this.adverbs = this.getWords(a2);
+        this.verbs = this.getWords(v2);
+        System.out.println(Arrays.toString(verbs.toArray()));
     }
     
     //Use if you want alternative words from a different file.
-    AdverbsNVerbs(String fs){
+    AdverbsNVerbs(String fs) throws FileNotFoundException, IOException{
         
     }
     

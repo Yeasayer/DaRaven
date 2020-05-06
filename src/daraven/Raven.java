@@ -18,6 +18,12 @@ public class Raven {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        //LazyTest Right here.
+        
+        NounsNAdjectives na = new NounsNAdjectives();
+        AdverbsNVerbs av = new AdverbsNVerbs();
+        /*
         System.out.println("This is a madlib for Edgar Allen Poe's Poem 'The Raven'.");
         String place, fName, edVerb, edVerb2, ingVerb, pNoun;
         place = place();
@@ -84,5 +90,5 @@ public class Raven {
         Scanner sc = new Scanner(System.in);
         ingVerb = sc.nextLine();
         return ingVerb;
-    }
+    }*/
 }
