@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.net.URL;
 /**
  *
- * @author Joseph Acevedo
+ * @author Joseph Acevedo, Nik, 
  */
 public class NounsNAdjectives implements FileLoad{
 
