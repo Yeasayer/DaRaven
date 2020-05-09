@@ -4,14 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/AdverbsNVerbs.java</file>
-            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/Words/verbs.txt</file>
-            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/Words/nouns.txt</file>
-            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/Words/adjectives.txt</file>
-            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/.git/config</file>
+            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/FileLoad.java</file>
             <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/NounsNAdjectives.java</file>
-            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/Words/TheRaven.txt</file>
-            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/Words/adverbs.txt</file>
-            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/DaRaven.java</file>
+            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/src/daraven/Raven.java</file>
+            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/resources/Words/adverbs.txt</file>
+            <file>file:/home/yeasayer/NetBeansProjects/DaRaven/resources/Words/nouns.txt</file>
         </group>
     </open-files>
 </project-private>

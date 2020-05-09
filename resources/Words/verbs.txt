@@ -1,5 +1,12 @@
 beat
 weep
 rap
-sat
-tremble
+burp
+derp
+lift
+cross
+jump
+open
+clos
+nope
+scream

@@ -35,10 +35,10 @@ public class AdverbsNVerbs implements FileLoad{
             String v2 = cl.getResource(vfile).getFile();
             String a2 = cl.getResource(advfile).getFile();
             //Comment out for later.
-            System.out.println(a2+" "+v2);
+            //System.out.println(a2+" "+v2);
             this.adverbs = this.getWords(a2);
             this.verbs = this.getWords(v2);
-            System.out.println(Arrays.toString(verbs.toArray()));
+            //System.out.println(Arrays.toString(verbs.toArray()));
         } catch (Exception e){
             System.out.println(e);
         }
@@ -63,11 +63,18 @@ public class AdverbsNVerbs implements FileLoad{
         i = (i>adverbs.size()||i<0?0:i);
         return adverbs.get(i);
     }
+    public ArrayList<String> getAllAdverbs(){
+        return adverbs;
+    }
+    
     public String getVerb(){
-        return adverbs.get((int)(Math.random() * adverbs.size()));
+        return verbs.get((int)(Math.random() * adverbs.size()));
     }
     public String getVerb(int i){
-        i = (i>adverbs.size()||i<0?0:i);
+        i = (i>verbs.size()||i<0?0:i);
         return verbs.get(i);
+    }
+    public ArrayList<String> getAllVerbs(){
+        return verbs;
     }
 }

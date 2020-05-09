@@ -1,13 +1,13 @@
-Once upon a midnight %s, while I pondered, %s and %s,
-Over many a quaint and curious %s of forgotten %s,
-While I %s, nearly napping, suddenly there came a %s,
-As of %s gently rapping, rapping at my %s door.
-'’Tis some %s,' I muttered, 'tapping at my %s door—
+Once upon a midnight adj, while I pondered, adj and adj,
+Over many a quaint and curious noun of forgotten noun,
+While I ved, nearly napping, suddenly there came a noun,
+As of noun gently rapping, rapping at my loc door.
+'’Tis some noun,' I muttered, 'tapping at my loc door—
 Only this and nothing more.'
 
-Ah, distinctly I remember it was in the %s December;
-And each separate %s ember wrought its %s upon the floor.
-Eagerly I %s the morrow;%s I had sought to borrow
-From my %s surcease of sorrow—sorrow for the %s Lenore—
-For the %s and %s maiden whom the angels name %s—
+Ah, distinctly I remember it was in the adj December;
+And each separate ving ember wrought its noun upon the floor.
+Eagerly I ved the morrow; adv I had sought to borrow
+From my pnoun surcease of sorrow—sorrow for the adj girl—
+For the adj and adj maiden whom the angels name girl—
 Nameless here for evermore.
