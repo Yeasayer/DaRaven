@@ -22,29 +22,36 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.BufferedReader;
+import java.io.InputStream;
+import java.util.Scanner;
 
 /**
  *
  * @author yeasayer
  */
 public interface FileLoad {
-    default ArrayList<String> getWords(String filename) 
+    default ArrayList<String> getWords(InputStream filename) 
             throws FileNotFoundException, IOException{
         
         ArrayList<String> list = new ArrayList<String>();
         FileReader fr;
         String line;
         BufferedReader br; //HUEHUEHUE
+        Scanner sc = new Scanner(filename);
         
         //NEED TO ADD TRY/CATCH FOR USER ADDED FILES JUST IN CASE!
-        try{
-        fr = new FileReader(filename);
-        br = new BufferedReader(fr);
+        
+        while (sc.hasNextLine())
+            list.add(sc.nextLine());
+        /*try{
+        /*fr = new FileReader(filename);
+        br = new BufferedReader(filename);
         while ((line = br.readLine()) != null)
             list.add(line);
         } catch (Exception e){
             System.err.print(e);
-        }
+        }*/
+            
         return list;
     }
     

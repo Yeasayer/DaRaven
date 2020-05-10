@@ -24,6 +24,7 @@ package daraven;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -40,15 +41,18 @@ public class AdverbsNVerbs implements FileLoad{
         this.vfile = "Words/verbs.txt";
         this.advfile = "Words/adverbs.txt";
         
-        ClassLoader cl = ClassLoader.getSystemClassLoader();
+        //ClassLoader cl = ClassLoader.getSystemClassLoader();
+        InputStream stv=getClass().getClassLoader().getResourceAsStream(vfile);
+        InputStream sta=getClass().getClassLoader().getResourceAsStream(advfile);
+        
         
         try{
-            String v2 = cl.getResource(vfile).getFile();
-            String a2 = cl.getResource(advfile).getFile();
+            //String v2 = cl.getResource(vfile).getFile();
+            //String a2 = cl.getResource(advfile).getFile();
             //Comment out for later.
             //System.out.println(a2+" "+v2);
-            this.adverbs = this.getWords(a2);
-            this.verbs = this.getWords(v2);
+            this.adverbs = this.getWords(sta);
+            this.verbs = this.getWords(stv);
             //System.out.println(Arrays.toString(verbs.toArray()));
         } catch (Exception e){
             System.out.println(e);

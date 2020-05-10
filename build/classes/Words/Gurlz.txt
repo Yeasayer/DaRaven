@@ -6,7 +6,8 @@ Princess Leia
 Asuka
 Rei
 Misato
-Audrey
+Audrey Horne
+Laura Palmer
 Peggy Hill
 Uma Thurman
 Lain Iwakura
@@ -20,3 +21,6 @@ MC Ride
 Richard Stallman
 Steve Ballmer
 Larry Elison
+Scout's Mom
+Ms. Paulene
+Alyx Vance

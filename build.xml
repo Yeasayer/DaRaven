@@ -70,4 +70,13 @@
     nbproject/build-impl.xml file. 
 
     -->
+    <!--<target name="-pre-jar">
+       
+       <copy todir="${build.dir}/classes/Words"><fileset dir="resources/Words"/></copy>
+    </target>
+
+    <target name="-post-jar">
+       <delete dir="${build.dir}/classes/myres/*.txt" />
+       <delete dir="${build.dir}/classes/myres"/>
+    </target>-->
 </project>

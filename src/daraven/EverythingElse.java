@@ -17,6 +17,7 @@
 package daraven;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 /**
@@ -37,12 +38,17 @@ public class EverythingElse implements FileLoad{
     
     EverythingElse(){
         
+        
+        InputStream str=getClass().getClassLoader().getResourceAsStream(files[0]);
+        InputStream stp=getClass().getClassLoader().getResourceAsStream(files[1]);
+        InputStream stg=getClass().getClassLoader().getResourceAsStream(files[2]);
+        
         ClassLoader cl = ClassLoader.getSystemClassLoader();
         
         try{
-            poem = this.getWords(cl.getResource(files[0]).getFile());
-            places = this.getWords(cl.getResource(files[1]).getFile());
-            girls = this.getWords(cl.getResource(files[2]).getFile());
+            poem = this.getWords(str);
+            places = this.getWords(stp);
+            girls = this.getWords(stg);
         } catch (IOException e){
             System.out.println(e);
         }
